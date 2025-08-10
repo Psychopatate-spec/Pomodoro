@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pomodoro App</title>
+  </head>
+  <body>
+    <h1>Pomodoro Timer</h1>
+    <div id="timer">
+      <h2>Timer</h2>
+      <p id="countDown"></p>
+      <div id="settings">
+        <label for="workDuration">Work Duration (minutes):</label>
+        <input type="number" id="workDuration" value="25" min="1" />
+        <label for="breakDuration">Break Duration (minutes):</label>
+        <input type="number" id="breakDuration" value="5" min="1" />
+      </div>
+      <div id="controls">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <div id="separator"></div>
+    <div id="notes">
+      <h2>Notes</h2>
+      <textarea id="noteInput" placeholder="Write your notes here..."></textarea>
+      <button id="saveNote">Save Note</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
