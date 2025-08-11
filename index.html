@@ -1,3 +1,5 @@
+<!-- index.html file -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,10 +13,14 @@
       <h2>Timer</h2>
       <p id="countDown"></p>
       <div id="settings">
-        <label for="workDuration">Work Duration (minutes):</label>
-        <input type="number" id="workDuration" value="25" min="1" />
-        <label for="breakDuration">Break Duration (minutes):</label>
-        <input type="number" id="breakDuration" value="5" min="1" />
+        <div id="settings-row">
+          <label class="setting-label" for="workDuration">Work Duration (minutes):</label>
+          <label class="setting-label" for="breakDuration">Break Duration (minutes):</label>
+        </div>
+        <div class="setting-inputs">
+          <input class="setting-input" type="number" id="workDuration" value="25" min="1" />
+          <input class="setting-input" type="number" id="breakDuration" value="5" min="1" />
+        </div>
       </div>
       <div id="controls">
         <button id="start">Start</button>

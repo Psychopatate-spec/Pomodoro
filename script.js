@@ -1,3 +1,5 @@
+// script.js file //
+
 let tenMinute = 2;
 let oneMinute = 5;
 let tenSeconde = 0;
