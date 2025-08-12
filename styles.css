@@ -3,8 +3,19 @@
 h1, h2, p {
   text-align: center;
 }
+#timer {
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 20px auto;
+  width: 70%;
+}
 p {
   font-size: 45px;
+}
+hr {
+  width: 80%;
+  margin: 50px auto;
 }
 #settings {
   display: flex;
