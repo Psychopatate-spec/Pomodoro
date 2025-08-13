@@ -5,9 +5,8 @@ A simple Pomodoro timer app to help improve productivity using the Pomodoro Tech
 
 ## Features
 - Start, pause, and reset the Pomodoro timer.
-- Switch between work and break intervals.
 - Customize timer durations.
-- Take and save notes during each session to track tasks, ideas, or progress.
+- Play background music during sessions.
 
 ## Installation
 1. Clone or download the repository.
@@ -16,9 +15,8 @@ A simple Pomodoro timer app to help improve productivity using the Pomodoro Tech
 ## Usage
 - Click "Start" to begin a Pomodoro session.
 - Use "Pause" and "Reset" as needed.
-- Switch between work and break intervals.
-- Use the notes section to jot down tasks, ideas, or anything relevant during your session.
 - Customize timer durations if desired.
+- Click "Play Music" to toggle background music on or off.
 
 ## Technologies Used
 - HTML
@@ -33,6 +31,9 @@ Project 1/
 ├── script.js
 ├── README.md
 └── assets/
+    ├── favicon.ico
+    ├── logo.png
+    ├── music.mp3
     └── background.mp4
 ```
 

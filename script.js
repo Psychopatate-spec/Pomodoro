@@ -3,7 +3,9 @@
 const start = document.getElementById("start");
 const stop = document.getElementById("stop");
 const reset = document.getElementById("reset");
+const music = document.getElementById("music");
 const timer = document.getElementById("countDown");
+const audio = document.getElementById("audio");
 
 let timeLeft = 1500;
 let interval;
@@ -48,3 +50,12 @@ const resetTimer = () => {
 start.addEventListener("click", startTimer);
 stop.addEventListener("click", stopTimer);
 reset.addEventListener("click", resetTimer);
+music.addEventListener("click", () => {
+    if (audio.paused) {
+        audio.play();
+        music.textContent = "Pause Music";
+    } else {
+        audio.pause();
+        music.textContent = "Play Music";
+    }
+});
