@@ -31,7 +31,9 @@ Project 1/
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
+├── README.md
+└── assets/
+    └── background.mp4
 ```
 
 ## Contributing

@@ -8,32 +8,41 @@
     <title>Pomodoro App</title>
   </head>
   <body>
-    <h1>Pomodoro Timer</h1>
-    <div id="timer">
-      <h2>Timer</h2>
-      <p id="countDown"></p>
-      <hr />
-      <div id="settings">
-        <div id="settings-row">
-          <label class="setting-label" for="workDuration">Work Duration (minutes):</label>
-          <label class="setting-label" for="breakDuration">Break Duration (minutes):</label>
+    <video autoplay muted loop class="video-background">
+      <source src="assets/background.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>Pomodoro Timer</h1>
+      <div id="timer">
+        <h2>Timer</h2>
+        <p id="countDown"></p>
+        <hr />
+        <div id="settings">
+          <div id="settings-row">
+            <label class="setting-label" for="workDuration">Work Duration (minutes):</label>
+            <label class="setting-label" for="breakDuration">Break Duration (minutes):</label>
+          </div>
+          <div class="setting-inputs">
+            <input class="setting-input" type="number" id="workDuration" value="25" min="1" />
+            <input class="setting-input" type="number" id="breakDuration" value="5" min="1" />
+          </div>
         </div>
-        <div class="setting-inputs">
-          <input class="setting-input" type="number" id="workDuration" value="25" min="1" />
-          <input class="setting-input" type="number" id="breakDuration" value="5" min="1" />
+        <div id="controls">
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
         </div>
       </div>
-      <div id="controls">
-        <button id="start">Start</button>
-        <button id="stop">Stop</button>
-        <button id="reset">Reset</button>
+
+<!-- Notes Feature (in development) 
+      <div id="separator"></div>
+      <div id="notes">
+        <h2>Notes</h2>
+        <textarea id="noteInput" placeholder="Write your notes here..."></textarea>
+        <button id="saveNote">Save Note</button>
       </div>
-    </div>
-    <div id="separator"></div>
-    <div id="notes">
-      <h2>Notes</h2>
-      <textarea id="noteInput" placeholder="Write your notes here..."></textarea>
-      <button id="saveNote">Save Note</button>
+-->
+
     </div>
     <script src="script.js"></script>
   </body>
