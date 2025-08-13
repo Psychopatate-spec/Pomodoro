@@ -8,6 +8,7 @@ const timer = document.getElementById("countDown");
 const audio = document.getElementById("audio");
 
 let timeLeft = 1500;
+let isTimerOn = false;
 let interval;
 
 function saveValue () {
@@ -26,20 +27,25 @@ const updateTimer = () => {
 };
 
 const startTimer = () => {
-  interval = setInterval(() => {
-    timeLeft--;
-    updateTimer();
-
-    if (timeLeft === 0) {
-      clearInterval(interval);
-      alert("Time's up!");
-      timeLeft = 1500;
+  if (isTimerOn === false) {
+    interval = setInterval(() => {
+      
+      timeLeft--;
       updateTimer();
-    }
-  }, 1000)
+
+      if (timeLeft === 0) {
+        clearInterval(interval);
+        alert("Time's up!");
+        timeLeft = 1500;
+        updateTimer();
+      }
+    }, 1000)
+  }
 };
 
-const stopTimer = () => clearInterval(interval);
+const stopTimer = () => {
+  clearInterval(interval);
+}
 
 const resetTimer = () => {
   clearInterval(interval);
@@ -47,9 +53,18 @@ const resetTimer = () => {
   updateTimer();
 };
 
-start.addEventListener("click", startTimer);
-stop.addEventListener("click", stopTimer);
-reset.addEventListener("click", resetTimer);
+start.addEventListener("click", () => {
+  startTimer();
+  isTimerOn = true;
+});
+stop.addEventListener("click", () => {
+  stopTimer();
+  isTimerOn = false;
+});
+reset.addEventListener("click", () => {
+  resetTimer();
+  isTimerOn = false;
+});
 music.addEventListener("click", () => {
     if (audio.paused) {
         audio.play();
