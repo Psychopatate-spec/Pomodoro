@@ -1,4 +1,4 @@
-# Pomodoro-App
+# Spirited Work Pomodoro Timer
 
 ## Description
 A simple Pomodoro timer app to help improve productivity using the Pomodoro Technique. The app allows users to set work and break intervals, track sessions, play background lofi music, and reset the timer as needed.
