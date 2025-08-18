@@ -6,6 +6,7 @@ const reset = document.getElementById("reset");
 const music = document.getElementById("music");
 const timer = document.getElementById("countDown");
 const audio = document.getElementById("audio");
+const background = document.getElementById("video-background")
 
 let timeLeft = 1500;
 let isTimerOn = false;
@@ -56,14 +57,17 @@ const resetTimer = () => {
 start.addEventListener("click", () => {
   startTimer();
   isTimerOn = true;
+  background.play();
 });
 stop.addEventListener("click", () => {
   stopTimer();
   isTimerOn = false;
+  background.pause();
 });
 reset.addEventListener("click", () => {
   resetTimer();
   isTimerOn = false;
+  background.pause();
 });
 music.addEventListener("click", () => {
     if (audio.paused) {

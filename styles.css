@@ -10,7 +10,7 @@ body {
     -1px  1px 0 black,
     1px  1px 0 black;
 }
-.video-background {
+#video-background {
   position: fixed;
   top: 0;
   left: 0;
