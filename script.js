@@ -36,6 +36,7 @@ const startTimer = () => {
 
       if (timeLeft === 0) {
         clearInterval(interval);
+        isTimerOn = false;
         alert("Time's up!");
         timeLeft = 1500;
         updateTimer();
@@ -46,11 +47,12 @@ const startTimer = () => {
 
 const stopTimer = () => {
   clearInterval(interval);
+  isTimerOn = false;
 }
 
 const resetTimer = () => {
   clearInterval(interval);
-  timeLeft = 1500;
+  saveValue();
   updateTimer();
 };
 

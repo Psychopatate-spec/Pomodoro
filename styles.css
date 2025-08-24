@@ -97,8 +97,9 @@ input[type="number"] {
   font-weight: bold;
   border: none;
   border-radius: 20px;
-  color: rgb(230, 213, 210);
   cursor: pointer;
+  background-color: rgba(230, 213, 210, 0.8);
+  color: black;
 }
 button {
   padding: 10px 20px;
@@ -140,8 +141,4 @@ button#music:hover{
   background-color: rgba(83, 211, 158, 1);
   transform: scale(1.05);
   transition: 0.1s ease-in;
-}
-input[type="number"] {
-  background-color: rgba(230, 213, 210, 0.8);
-  color: black;
 }
