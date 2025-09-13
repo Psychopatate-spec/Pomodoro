@@ -27,27 +27,34 @@ body {
   top: 50%;
 }
 #logo {
-  width: 30%;
-  height: auto;
+  width: auto;
+  height: 100px;
 }
 h1 {
-  font-size: 35px;
+  font-size: 24px;
   font-weight: bold;
   border: none;
   border-radius: 50px;
-  padding:10px 0;
-  margin: 0 auto;
-  width: 15%;
-  min-width: 180px;
+  padding: 6px 0;
+  margin: 0 auto 8px auto;
+  width: 60%;
+  min-width: 200px;
   background-color: rgba(75,120,187,0.8);
 }
-#timer, #notes {
+#timer {
   border: none;
   border-radius: 50px;
-  padding: 20px 0;
+  padding: 15px 10px;
   margin: 0 auto;
-  width: 70%;
+  width: 40%;
+  min-width: 300px;
+  height: 350px;
+  min-height: 35vh;
   background-color: rgba(174, 88, 83, 0.6);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 p#description {
   margin-left: 15%;
@@ -55,22 +62,27 @@ p#description {
   text-decoration: underline;
 }
 p#countDown {
-  font-size: 10vh;
+  font-size: 3rem;
   font-weight: bold;
+  margin: 5px 0;
+  line-height: 1.1;
 }
 hr {
-  width: 70%;
-  height: 5px;
+  width: 80%;
+  height: 2px;
   background-color: rgb(230, 213, 210);
-  margin: 20px auto;
+  margin: 5px auto;
   border: none;
   border-radius: 5px;
+  flex-shrink: 0;
 }
 #settings {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+  margin: 5px 0;
+  flex-shrink: 0;
 }
 .setting-label {
   text-align: center;
@@ -85,6 +97,10 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  margin-top: 10px;
+  flex-shrink: 0;
 }
 label {
   font-size: 20px;
@@ -102,9 +118,9 @@ input[type="number"] {
   color: black;
 }
 button {
-  padding: 10px 20px;
-  margin-top: 10px;
-  font-size: 16px;
+  padding: 6px 12px;
+  margin-top: 8px;
+  font-size: 14px;
   border: none;
   border-radius: 20px;
   color: rgb(230, 213, 210);
